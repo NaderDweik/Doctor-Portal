@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Treatment Portal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo"> <img src="Media/pics/Logo.png" alt=""></div>
+        <nav>
+            <ul>
+                <li class="menu-item patient-info"><img src="Media/icons/Information.png" class="menu-icon" alt="Information Icon"><a href="#" class="menu-link">Patient Information</a></li>
+                <li class="menu-item photos-xrays menu-item-selected"><img src="Media/icons/camera.png" class="menu-icon" alt="Camera Icon"><a href="#" class="menu-link-photos">Photos & X-rays</a></li>
+                <li class="menu-item impressions"><img src="Media/icons/Impressions.png" class="menu-icon" alt="Impressions Icon"><a href="#" class="menu-link">Impressions</a></li>
+                <li class="menu-item prescription"><img src="Media/icons/Prescription.png" class="menu-icon" alt="Prescription Icon"><a href="#" class="menu-link">Prescription</a></li>
+                <li class="menu-item summary"><img src="Media/icons/Information.png" class="menu-icon" alt="Information Icon"><a href="#" class="menu-link">Summary</a></li>
+                <li class="menu-item submission"><img src="Media/icons/Frame.png" class="menu-icon" alt="Frame Icon"><a href="#" class="menu-link">Submission Complete</a></li>
+            </ul>
+
+            
+            
+        </nav>
+    </aside>
+
+    <main>
+        <header class="header">
+            <h2></h2>
+            <div class="profile">
+                <span class="user-name">Nader Dweik</span>
+                <div class="icons">
+                    <button class="icon"> <img src="Media/icons/Notification-Icon.png" alt=""></button>
+                    <button class="icon"><img src="Media/icons/Settings-Icon.png" alt=""></button>
+                    <button class="icon"> <img src="Media/icons/Logout-icon.png" alt=""></button>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-title">
+            <h1>Photos & X-rays</h1>
+        </section>
+
+        <section class="image-section">
+            <div class="image-header">
+                <h2 class="image-category-title">Photos and X-rays</h2>
+                <div class="case-info">
+                    wsdd ddd<br>
+                    Case 23051412WD.YAZ
+                </div>
+            </div>
+            <div class="image-grids-container">
+                <div class="photos-grid">
+                    <div class="image-item">
+                        <img src="Media/pics/front pose.png" alt="Front Pose">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/upload-icon.png" alt="">
+                        </span>
+                        <p>Front Pose</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/front smile.png" alt="Front Smiling">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Front Smiling</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/frontal.png" alt="Frontal">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Frontal</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/left buccal.png" alt="Left Buccal">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Left Buccal</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/lower occlusal.png" alt="Lower Occlusal">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Lower Occlusal</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/Group 1154.png" alt="Upper Occlusal">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Upper Occlusal</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/right buccal.png" alt="Right Buccal">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Right Buccal</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/side profile.png" alt="Side Profile">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Side Profile</p>
+                    </div>
+                </div>
+                <div class="x-rays-grid">
+                    <div class="image-item">
+                        <img src="Media/pics/cephalometric.png" alt="Cephalometric X-ray">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Cephalometric X-ray</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="Media/pics/panoramic.png" alt="Panoramic X-ray">
+                        <span class="upload-icon" onclick="triggerUpload(this)">
+                            <img src="Media/icons/Upload-icon-grey.png" alt="">
+                        </span>
+                        <p>Panoramic X-ray</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <input type="file" id="fileInput" accept="image/*" style="display: none" onchange="handleFileUpload(event)">
+
+        <footer>
+            <button class="nav-btn-p">⬅ Previous</button>
+            <button class="nav-btn-n">Next ➡</button>
+        </footer>
+    </main>
+
+    <input type="file" id="fileInput" accept="image/*" style="display: none" onchange="handleFileUpload(event)">
+    
+</body>
+</html>

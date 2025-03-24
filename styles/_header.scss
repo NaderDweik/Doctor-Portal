@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+    
+    .profile {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .dropdown {
+            position: relative;
+            button {
+                background: none;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            ul {
+                position: absolute;
+                background: white;
+                color: black;
+                list-style: none;
+                padding: 5px;
+                display: none;
+                li {
+                    padding: 10px;
+                    &:hover {
+                        background: #ddd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sidebar-titles {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
