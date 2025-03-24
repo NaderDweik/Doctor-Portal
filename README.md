@@ -41,4 +41,20 @@ This project is a web-based application designed to streamline the management an
 * **CSS:** For styling the user interface and layout.
 * **JavaScript:** For handling image uploads, displaying images, and interactive elements.
 
-## File Structure
+## File Structure:
+/
+├── Media/
+│   ├── icons/          # Directory containing image icons
+│   │   ├── ...         # Various icons (e.g., upload, camera, etc.)
+│   ├── pics/           # Directory containing patient images
+│   │   ├── ...         # Various image files (e.g., front pose, x-rays, etc.)
+├── styles/
+│   ├── _general.scss    # General SCSS styles
+│   ├── _header.scss     # SCSS styles for the header
+│   ├── _sidebar.scss    # SCSS styles for the sidebar
+│   ├── main.css        # Compiled CSS stylesheet
+│   ├── main.css.map    # Source map for debugging SCSS
+│   └── main.scss       # Main SCSS file
+├── index.html          # Main HTML file for the Patient Treatment Portal
+├── main.js             # JavaScript file for interactivity
+└── README.md           # Documentation for the project
